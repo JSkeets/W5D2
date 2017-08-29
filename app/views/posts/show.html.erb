@@ -1,0 +1,4 @@
+<%=@post.content %>
+<% if current_user.id = @post.author_id %>
+<%=link_to 'Edit Post',edit_post_url(@post.id) %>
+<% end %>
